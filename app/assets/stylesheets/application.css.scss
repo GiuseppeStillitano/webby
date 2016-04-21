@@ -258,10 +258,44 @@ h5 {
 /*footer-start*/
 
 footer{
-  width: 100%;
-  height: 75*4px;
-  float: left;
+margin-top:300px;
+width: 100%;
+float: left;
+padding: 0;
+margin-bottom: 0;
+.logo {
+    float: left;
+    width: 61px;
+    height: 26px;
+    margin-left: 2.6563364693%;
+    margin-top: 18px;
+    text-align: center;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    position: relative;
+    z-index: 1000;
 }
+.logo a {
+    text-decoration: none;
+    color: $gray;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+p{
+  float: left;
+  font-size: 14px;
+  color: #ccc;
+  margin-left: 100px;
+  margin-top: 25px;
+
+}
+
+
+}
+
 
 
 /*footer-start*/
