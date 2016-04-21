@@ -1,3 +1,5 @@
+#va a definire il contenuto di un post es. title e contenuto
+
 class CreatePosts < ActiveRecord::Migration
   def change
     create_table :posts do |t|

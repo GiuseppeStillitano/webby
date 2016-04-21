@@ -1,0 +1,267 @@
+ @import 'animation'; 
+/* @import 'header';  */
+/* @import 'footer'; */
+
+$main: #F7F7F7;
+$gray: #747474;
+$green: #53E7B0;
+$bg: #fff;
+$font_main: 'Lato', sans-serif;
+$g: green;
+$prova: 0;
+
+
+body {
+    background-color: $main;
+    margin: $prova;
+    font-family: $font_main;
+}
+
+
+
+/*header-start*/
+
+$prova: 0;
+.main {
+    width: 100%;
+    float: left;
+    height: 75px;
+    position: relative;
+    margin-top: 0;
+    z-index: 100;
+
+    .logo {
+        float: left;
+        width: 61px;
+        height: 26px;
+        margin-left: 2.6563364693%;
+        margin-top: 22px;
+        text-align: center;
+        animation-name: pulse;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+        position: relative;
+        z-index: 1000;
+    }
+    .logo a {
+        text-decoration: none;
+        color: $gray;
+        font-size: 27px;
+        font-weight: 400;
+    }
+    .main_menu {
+        height: 19px;
+        width: 100px;
+        float: right;
+        margin-right: 2.6563364693%;
+        margin-top: 33px;
+        position: relative;
+        z-index: 11;
+    }
+    .text_animation {
+        font-size: 15.19px;
+        color: #747474;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    .ham_menu {
+        height: 19px;
+        width: 27px;
+        float: right;
+    }
+    .hm {
+        fill: none;
+        stroke: #747474;
+        stroke-width: 2;
+        stroke-linecap: square;
+        animation-name: hm_animation;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+}
+.navigazione_display {
+  display: none;
+}
+.navigazione {
+    z-index: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.7);
+    text-align: right;
+    .nav_over {
+        position: relative;
+        z-index: 100;
+        float: right;
+        width: 100%;
+    }
+    nav ul {
+        float: right;
+        width: 100%;
+        margin-top: 20%;
+        margin-right: 108px;
+        list-style: none;
+    }
+    nav ul li {
+        margin-top: 50px;
+        text-decoration: none;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: $gray;
+        font-size: 64px;
+        font-weight: 300;
+    }
+}
+
+
+/*header-end*/
+
+
+
+
+#bg{
+  position: fixed;
+  z-index: -1;
+}
+.st0{
+  stroke-linecap: square;
+  animation-name: bg_animation;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: even;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.show{
+  margin-top:75px;
+  float: left;
+  width: 100%;
+  text-align: center;
+  .show_contenitore{
+    margin-bottom: 75px;
+    width: 100%;
+    float: left;
+    .show_row{
+      margin: auto;
+      max-width: 1807px;
+      margin-left: 2.6563364693%;
+      margin-right: 2.6563364693%;
+      margin-top: 50px;
+    }
+    .show_contenuto{
+      width: 100%;
+      margin-right: 20px;
+      float: left;
+      color: $gray;
+      margin-bottom: 70px;
+      position: static;
+
+      p{
+        font-size: 15vw;
+        font-weight: 200;
+
+      }
+      a{
+        text-decoration: none;
+        color: $gray;
+      }
+    }
+  }
+}
+
+.intro {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.intro_contenitore {
+    width: 100%;
+    float: left;
+    border-bottom: 1px $main solid;
+    background-color: $bg;
+    box-shadow: 0 0 17px 0 rgba(0,0,0,0.26);
+    margin-bottom: 75px;
+    .row_main {
+        margin: auto;
+        max-width: 1807px;
+        margin-left: 2.6563364693%;
+        margin-right: 2.6563364693%;
+        margin-top: 50px;
+        .category_name {
+            text-align: left;
+            font-size: 51.28px;
+            font-weight: 200;
+            color: $gray;
+            margin-bottom: 50px;
+        }
+        .prova {
+            background: $main;
+            box-shadow: 0 0 17px 0 rgba(0,0,0,0.26);
+            width: 18.731599336%;
+            margin-right: 20px;
+            float: left;
+            color: $gray;
+            margin-bottom: 70px;
+        }
+    }
+}
+img {
+    max-width: 100%;
+    margin-top: 10px;
+}
+h5 {
+    text-align: left;
+    width: 100%;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.prova p {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+.saluto_logo {
+    max-width: 300px;
+    text-align: left;
+    margin-left: 11px;
+    margin-top: 30px;
+    text-decoration: none;
+    float: left;
+    height: 25px;
+    width: 160px;
+    background-color: $main;
+    text-align: center;
+    border-radius: 30px;
+    a {
+        text-decoration: none;
+        color: $gray;
+        font-size: 13px;
+        font-weight: 300;
+    }
+}
+.saluto_opacity {
+    display: none;
+}
+
+
+
+
+/*footer-start*/
+
+footer{
+  width: 100%;
+  height: 75*4px;
+  float: left;
+}
+
+
+/*footer-start*/
