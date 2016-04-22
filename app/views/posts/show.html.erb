@@ -19,7 +19,7 @@
   <div id="articolo">
     <h1><%= @post.title %></h1>
     <p class="date"><%= @post.created_at.strftime('%A, %b %d') %></p>
-    <p><%= @post.content %></p>
+    <p><%= simple_format @post.content %></p>
 
 
         <div id="gallery">
@@ -187,6 +187,7 @@
   <!--section///////end-->
 
 
+<%= link_to "Edit", edit_post_path(@post) %>
 
 
 
