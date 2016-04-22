@@ -1,12 +1,192 @@
 <!--pagina dove viene visualizzato il post attraverso le funzioni date in (post_controller.rb)-->
 
-<h1><%= @post.title %></h1><br>
 
-<p><%= @post.content %></p>
+  <!--section///////start-->
 
-<br>
-<br>
+<section>
+  <div id="img-prog">
+    <img src="img/forest-patrol.jpg" alt="">
+  </div>
+</section>
 
-<%= link_to "Edit", edit_post_path(@post) %>
-<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "sei sicuro di voler eliminare il post?"} %>
+
+<!--articolo-testo///////start-->
+
+
+<section>
+
+    <div id="progetto">
+  <div id="articolo">
+    <h1><%= @post.title %></h1>
+    <p class="date"><%= @post.created_at.strftime('%A, %b %d') %></p>
+    <p><%= @post.content %></p>
+
+
+        <div id="gallery">
+      <div class="immg">
+        <img src="img/forest-patrol.jpg" alt="" />
+      </div>
+
+      <div class="immg">
+        <img src="img/forest-patrol.jpg" alt="" />
+      </div>
+    </div>
+    </div>
+
+
+</section>
+
+
+
+
+<!--articolo///////end-->
+
+
+
+<section>
+  <div class="row">
+    <div id="contenitore-bottone">
+  <div id="bottom-show"><a href="">Show More</a></div>
+  </div>
+  </div>
+
+</section>
+
+<!--altri-prog///////start-->
+
+<section class="correlati_s">
+  <div class="row">
+    <div id="correlati">
+
+
+      <div class="col-1">
+        <a href=""><div class="primo-div">
+          <div id="img-int"><img src="img/forest-patrol.jpg" alt=""></div>
+
+        <h1>TITLE</h1>
+        <div class"descrizione"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p></div>
+        </div></a>
+
+      </div>
+
+
+
+      <div class="col-1">
+        <a href=""><div class="primo-div">
+          <div id="img-int"><img src="img/forest-patrol.jpg" alt=""></div>
+
+        <h1>TITLE</h1>
+        <div class"descrizione"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p></div>
+        </div></a>
+
+      </div>
+
+
+      <div class="col-1">
+        <a href=""><div class="primo-div">
+          <div id="img-int"><img src="img/forest-patrol.jpg" alt=""></div>
+
+        <h1>TITLE</h1>
+        <div class"descrizione"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p></div>
+        </div></a>
+
+      </div>
+
+
+      <div class="col-1">
+        <a href=""><div class="primo-div">
+          <div id="img-int"><img src="img/forest-patrol.jpg" alt=""></div>
+
+        <h1>TITLE</h1>
+        <div class"descrizione"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p></div>
+        </div></a>
+
+      </div>
+
+
+      <div class="col-1">
+        <a href=""><div class="primo-div">
+          <div id="img-int"><img src="img/forest-patrol.jpg" alt=""></div>
+
+        <h1>TITLE</h1>
+        <div class"descrizione"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p></div>
+        </div></a>
+
+      </div>
+
+
+      <div class="col-1">
+        <a href=""><div class="primo-div">
+          <div id="img-int"><img src="img/forest-patrol.jpg" alt=""></div>
+
+        <h1>TITLE</h1>
+        <div class"descrizione"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p></div>
+        </div></a>
+
+      </div>
+
+
+      <div class="col-1">
+        <a href=""><div class="primo-div">
+          <div id="img-int"><img src="img/forest-patrol.jpg" alt=""></div>
+
+        <h1>TITLE</h1>
+        <div class"descrizione"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p></div>
+        </div></a>
+
+      </div>
+
+
+      <div class="col-1">
+        <a href=""><div class="primo-div">
+          <div id="img-int"><img src="img/forest-patrol.jpg" alt=""></div>
+
+        <h1>TITLE</h1>
+        <div class"descrizione"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p></div>
+        </div></a>
+
+      </div>
+
+
+      <div class="col-1">
+        <a href=""><div class="primo-div">
+          <div id="img-int"><img src="img/forest-patrol.jpg" alt=""></div>
+
+        <h1>TITLE</h1>
+        <div class"descrizione"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p></div>
+        </div></a>
+
+      </div>
+
+
+      <div class="col-1">
+        <a href=""><div class="primo-div">
+          <div id="img-int"><img src="img/forest-patrol.jpg" alt=""></div>
+
+        <h1>TITLE</h1>
+        <div class"descrizione"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p></div>
+        </div></a>
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+</section>
+
+
+<!--altri-prog///////end-->
+
+
+
+
+
+
+  <!--section///////end-->
+
+
+
+
 

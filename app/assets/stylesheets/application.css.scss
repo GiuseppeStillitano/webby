@@ -15,6 +15,10 @@ body {
     background-color: $main;
     margin: $prova;
     font-family: $font_main;
+   a{
+   	text-decoration: none;
+   	color: $gray;
+   }
 }
 
 
@@ -26,9 +30,10 @@ $prova: 0;
     width: 100%;
     float: left;
     height: 75px;
-    position: relative;
-    margin-top: 0;
+    position: fixed;
+    top: 0;
     z-index: 100;
+    background: #fff;
 
     .logo {
         float: left;
@@ -43,13 +48,12 @@ $prova: 0;
         animation-iteration-count: infinite;
         position: relative;
         z-index: 1000;
-    }
-    .logo a {
         text-decoration: none;
         color: $gray;
         font-size: 27px;
         font-weight: 400;
     }
+    
     .main_menu {
         height: 19px;
         width: 100px;
@@ -185,29 +189,37 @@ $prova: 0;
     float: left;
     border-bottom: 1px $main solid;
     background-color: $bg;
-    box-shadow: 0 0 17px 0 rgba(0,0,0,0.26);
+    box-shadow: 0 0 17px 0 rgba(0,0,0,0.09);
     margin-bottom: 75px;
     .row_main {
         margin: auto;
         max-width: 1807px;
-        margin-left: 2.6563364693%;
-        margin-right: 2.6563364693%;
         margin-top: 50px;
         .category_name {
-            text-align: left;
             font-size: 51.28px;
             font-weight: 200;
             color: $gray;
             margin-bottom: 50px;
+
         }
         .prova {
             background: $main;
-            box-shadow: 0 0 17px 0 rgba(0,0,0,0.26);
-            width: 18.731599336%;
-            margin-right: 20px;
+            box-shadow: 0px 0px 6px  #E2E2E2;
+            width: 18.782512451577%;
+            margin-left: 0.608743774211%;
+            margin-right: 0.608743774211%;
             float: left;
             color: $gray;
             margin-bottom: 70px;
+        }
+
+        @media only screen and (max-width: 767px) {
+					.prova {
+						float: none;
+						margin-left: 2%;
+						margin-right: 2%;
+						width:96%;
+					}
         }
     }
 }
@@ -220,7 +232,7 @@ h5 {
     width: 100%;
     margin-left: 20px;
     font-size: 15px;
-}
+    }
 .prova p {
     margin-left: 20px;
     margin-right: 20px;
@@ -228,6 +240,7 @@ h5 {
     font-size: 12px;
     font-weight: 400;
     margin-bottom: 36px;
+
 }
 .saluto_logo {
     max-width: 300px;
@@ -259,43 +272,41 @@ h5 {
 
 footer{
 margin-top:300px;
+height:45px;
 width: 100%;
 float: left;
 padding: 0;
-margin-bottom: 0;
-.logo {
+bottom: 0;
+position: relative;
+
+.log p{
     float: left;
-    width: 61px;
-    height: 26px;
-    margin-left: 2.6563364693%;
-    margin-top: 18px;
-    text-align: center;
-    animation-name: pulse;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
-    position: relative;
-    z-index: 1000;
-}
-.logo a {
-    text-decoration: none;
     color: $gray;
     font-size: 18px;
     font-weight: 400;
+    margin-left: 20px;
+
 }
 
-p{
+.p-foot p{
   float: left;
-  font-size: 14px;
-  color: #ccc;
-  margin-left: 100px;
+  font-size: 12px;
+  color: $gray;
+  margin-left: 50px;
   margin-top: 25px;
-
 }
 
 
 }
 
+/*footer-end*/
 
 
-/*footer-start*/
+
+
+
+
+
+
+@import 'posts'; 
+@import 'griglie'; 
